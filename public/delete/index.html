@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excluir Pessoa - CRUD</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>CRUD - Cadastro de Pessoas</h1>
+  </header>
+
+  <nav>
+    <a href="../get/index.html">Listar (GET)</a>
+    <a href="../post/index.html">Adicionar (POST)</a>
+    <a href="../put/index.html">Editar (PUT)</a>
+    <a href="../delete/index.html" class="active">Excluir (DELETE)</a>
+  </nav>
+
+  <main>
+    <h2>Excluir registro</h2>
+
+    <div class="search-box">
+      <input type="text" id="buscaCpf" placeholder="Digite o CPF da pessoa a excluir" />
+      <button class="btn-primary" id="btnBuscar">Buscar</button>
+    </div>
+
+    <div id="resultado"></div>
+
+    <div class="msg" id="mensagem"></div>
+  </main>
+
+  <footer>JSON Server + Express &middot; Render</footer>
+
+  <script src="../delete/delete.js"></script>
+</body>
+</html>

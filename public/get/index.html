@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Listar Pessoas - CRUD</title>
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>CRUD - Cadastro de Pessoas</h1>
+  </header>
+
+  <nav>
+    <a href="../get/index.html" class="active">Listar (GET)</a>
+    <a href="../post/index.html">Adicionar (POST)</a>
+    <a href="../put/index.html">Editar (PUT)</a>
+    <a href="../delete/index.html">Excluir (DELETE)</a>
+  </nav>
+
+  <main>
+    <h2>Registros cadastrados</h2>
+
+    <div class="search-box">
+      <input type="text" id="buscaCpf" placeholder="Buscar por CPF (ex: 123.456.789-00)" />
+      <button class="btn-primary" id="btnBuscar">Buscar</button>
+      <button class="btn-secondary" id="btnLimpar">Limpar</button>
+    </div>
+
+    <div id="tabelaContainer">
+      <p class="empty">Carregando...</p>
+    </div>
+
+    <div class="msg" id="mensagem"></div>
+  </main>
+
+  <footer>JSON Server + Express &middot; Render</footer>
+
+  <script src="../get/get.js"></script>
+</body>
+</html>
